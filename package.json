@@ -1,0 +1,21 @@
+{
+  "name": "readbook",
+  "version": "1.0.0",
+  "description": "Read Project Gutenberg books in the terminal",
+  "main": "read.js",
+  "type": "module",
+  "scripts": {
+    "read": "node read.js",
+    "read:dark": "node read.js --mode dark"
+  },
+  "author": "Andy Stubbs",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "chalk": "^5.2.0",
+    "inquirer": "^7.3.3",
+    "ora": "^6.3.1",
+    "wrap-ansi": "^8.1.0",
+    "yargs": "^17.7.2"
+  }
+}
