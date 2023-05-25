@@ -56,7 +56,7 @@ async function formatTextWidth(bookTitle, mode) {
 async function selectAndDownloadBook() {
   const argv = yargs(process.argv.slice(2)).option("mode", {
     alias: "m",
-    describe: "Select the mode: light or dark",
+    describe: "Select the reading mode: light or dark",
     choices: ["light", "dark"],
     default: "light",
   }).argv;
