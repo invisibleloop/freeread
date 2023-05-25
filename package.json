@@ -1,6 +1,6 @@
 {
   "name": "freeread",
-  "version": "0.0.0-development",
+  "version": "1.5.0",
   "description": "Read Project Gutenberg books in the terminal",
   "main": "./read.js",
   "type": "module",
