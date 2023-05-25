@@ -18,7 +18,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
         with:
-          persist-credentials: false
+          persist-credentials: true
       - name: Install dependencies
         run: npm ci
 
