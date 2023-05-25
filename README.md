@@ -1,6 +1,6 @@
-# ReadBook
+# FreeRead
 
-ReadBook is a Node.js script that allows you to download and read books from Project Gutenberg right in your terminal. It offers a unique and distraction-free reading experience.
+FreeRead is a Node.js script that allows you to download and read books from Project Gutenberg right in your terminal. It offers a unique and distraction-free reading experience.
 
 ## Prerequisites
 
@@ -51,7 +51,7 @@ Once everything is set up, you can run the script using the npm script commands 
 
 These commands will present you with a list of books. Choose one to download and read.
 
-In this first version of "readbook" there are only two books to choose from. Eventually there will the ability to search for books available for free on Project Gutenberg.
+In this first version of "FreeRead" there are only two books to choose from. Eventually there will the ability to search for books available for free on Project Gutenberg.
 
 While reading, you can scroll through the book using the arrow keys or the space bar. To exit the book and the script, press `q`. Upon exiting, the script will delete the downloaded and generated files.
 
