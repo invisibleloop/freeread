@@ -75,9 +75,7 @@ async function selectAndDownloadBook() {
   const selectedBook = books.find((b) => b.title === book);
 
   if (selectedBook) {
-    const spinner = ora(
-      "Downloading and formatting text. Please wait."
-    ).start();
+    const spinner = ora("Downloading and formatting text.").start();
     await downloadEpub(selectedBook);
     await convertEpubToTxt(selectedBook.title);
     await formatTextWidth(selectedBook.title, mode);
