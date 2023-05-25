@@ -2,8 +2,11 @@
   "name": "readbook",
   "version": "0.0.0-development",
   "description": "Read Project Gutenberg books in the terminal",
-  "main": "read.js",
+  "main": "./read.js",
   "type": "module",
+  "bin": {
+    "readbook": "./read.js"
+  },
   "scripts": {
     "read": "node read.js",
     "read:dark": "node read.js --mode dark",
