@@ -8,12 +8,6 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      deployments: write
-      packages: write
-      pull-requests: write
-      repository-projects: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
