@@ -1,12 +1,13 @@
 {
   "name": "readbook",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Read Project Gutenberg books in the terminal",
   "main": "read.js",
   "type": "module",
   "scripts": {
     "read": "node read.js",
-    "read:dark": "node read.js --mode dark"
+    "read:dark": "node read.js --mode dark",
+    "semantic-release": "semantic-release"
   },
   "author": "Andy Stubbs",
   "license": "ISC",
@@ -17,5 +18,15 @@
     "ora": "^6.3.1",
     "wrap-ansi": "^8.1.0",
     "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/github": "^8.0.7",
+    "@semantic-release/release-notes-generator": "^11.0.1",
+    "semantic-release": "^21.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/invisibleloop/readbook.git"
   }
 }
