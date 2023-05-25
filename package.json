@@ -2,18 +2,19 @@
   "name": "freeread",
   "version": "1.5.0",
   "description": "Read Project Gutenberg books in the terminal",
-  "main": "./read.js",
+  "main": "./src/read.js",
   "type": "module",
-  "bin": {
-    "freeread": "./read.js"
-  },
   "scripts": {
-    "read": "node read.js",
-    "read:dark": "node read.js --mode dark",
-    "semantic-release": "semantic-release"
+    "read": "node ./src/read.js",
+    "read:dark": "node ./src/read.js --mode dark",
+    "semantic-release": "semantic-release",
+    "lint": "deno lint --unstable"
   },
   "author": "Andy Stubbs",
   "license": "ISC",
+  "engines": {
+    "node": ">=18"
+  },
   "dependencies": {
     "@semantic-release/npm": "^10.0.3",
     "axios": "^1.4.0",

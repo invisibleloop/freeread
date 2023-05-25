@@ -32,7 +32,7 @@ async function downloadEpub(book) {
   });
 }
 
-async function convertEpubToTxt(bookTitle) {
+function convertEpubToTxt(bookTitle) {
   return new Promise((resolve, reject) => {
     const converter = spawn("ebook-convert", [
       `${bookTitle}.epub`,
@@ -44,7 +44,7 @@ async function convertEpubToTxt(bookTitle) {
   });
 }
 
-async function formatTextWidth(bookTitle, mode) {
+function formatTextWidth(bookTitle, mode) {
   const text = fs.readFileSync(`${bookTitle}.txt`, "utf8");
   const formattedText = wrap(text, 70);
   fs.writeFileSync(
@@ -78,7 +78,7 @@ async function selectAndDownloadBook() {
     const spinner = ora("Downloading and formatting text.").start();
     await downloadEpub(selectedBook);
     await convertEpubToTxt(selectedBook.title);
-    await formatTextWidth(selectedBook.title, mode);
+    formatTextWidth(selectedBook.title, mode);
     spinner.stop();
 
     const bgColor = mode === "light" ? "ff/ff/ff" : "0/0/0";
