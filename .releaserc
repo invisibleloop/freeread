@@ -1,4 +1,5 @@
 {
+  "repositoryUrl": "https://github.com/invisibleloop/readbook.git",
   "branches": [
     "master"
   ],
@@ -6,5 +7,8 @@
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     "@semantic-release/github"
-  ]
+  ],
+  "preset": "angular",
+  "ci": true,
+  "debug": true
 }
